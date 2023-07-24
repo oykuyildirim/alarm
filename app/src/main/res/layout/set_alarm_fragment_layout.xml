@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Added Time picker just to pick the alarm time-->
+    <!--gravity is aligned to center-->
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/setBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:checked="false"
+                android:text="SET ALARM" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Alarm Title"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Note Alarm Title"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Added Toggle Button to set the alarm on or off-->
+    <!--ByDefault toggleButton is set to false-->
+
+    <!--"OnToggleClicked" method will be implemented in MainActivity.java -->
+
+</LinearLayout>
